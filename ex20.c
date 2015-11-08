@@ -62,7 +62,7 @@ int test_sentinel(int code) {
 
 error:
 	if(temp) free(temp);
-	return -1
+	return -1;
 }
 
 int test_check_mem() {
@@ -78,7 +78,7 @@ error:
 
 int test_check_debug() {
 	int i = 0;
-	check_debug(i !-0, "Oops, I was 0.");
+	check_debug(i!=0, "Oops, I was 0.");
 
 	return 0;
 
